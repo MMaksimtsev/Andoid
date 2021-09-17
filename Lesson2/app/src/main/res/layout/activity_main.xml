@@ -36,6 +36,7 @@
             android:editable="false"
             android:gravity="right"
             android:text="2121"
+
             android:textColor="@color/button_texColor"
             android:textSize="30sp" />
 
