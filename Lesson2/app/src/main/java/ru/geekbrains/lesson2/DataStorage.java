@@ -3,20 +3,24 @@ package ru.geekbrains.lesson2;
 public class DataStorage{
 
     private String buffer = "";
-    private Integer numberOne;
-    private Integer numberTwo;
+    private Float numberOne;
+    private Float numberTwo;
     private String operator;
 
 
     public void setBuffer(String buffer) {
-        this.buffer = this.getBuffer() + buffer;
+        if (buffer == null) {
+            this.buffer = "";
+        } else {
+            this.buffer = this.getBuffer() + buffer;
+        }
     }
 
-    public void setNumberOne(Integer numberOne) {
+    public void setNumberOne(Float numberOne) {
         this.numberOne = numberOne;
     }
 
-    public void setNumberTwo(Integer numberTwo) {
+    public void setNumberTwo(Float numberTwo) {
         this.numberTwo = numberTwo;
     }
 
@@ -26,5 +30,13 @@ public class DataStorage{
 
     public String getBuffer() {
         return buffer;
+    }
+
+    public Float getNumberOne() {
+        return numberOne;
+    }
+
+    public Float getNumberTwo() {
+        return numberTwo;
     }
 }

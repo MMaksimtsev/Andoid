@@ -35,8 +35,6 @@
             android:background="@drawable/display_shape"
             android:editable="false"
             android:gravity="right"
-            android:text="2121"
-
             android:textColor="@color/button_texColor"
             android:textSize="30sp" />
 
@@ -345,7 +343,7 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/number_point"
+            android:id="@+id/symbol_point"
 
             android:layout_width="@dimen/button_layout_width"
             android:layout_height="@dimen/button_layout_height"
